@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Currículo Arthur - Trabalho 01 - HTML e CSS</title>
+
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <style>
+
+            .cor_fundo_1{
+                background-color: rgb(238, 218, 137);
+            }
+
+            .cor_fundo_2{
+                background-color: rgb(218, 198, 113);
+            }
+
+            .titulo_centralizado {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-weight: bold;             
+            }
+
+            .text_formatado_1{
+                color: black;
+                text-decoration: underline;
+            }
+
+            .text_formatado_2{
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            .paragrafo_1{
+                color: black;
+                text-align: center;
+            }
+
+            .center{
+                text-align: center;
+            }
+
+            .label_estilo{
+                text-align: center;
+            }
+
+            .span_format{
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            .imgCenter {
+                text-align: center;
+
+                border: 1px;
+                border-style: solid; 
+                border-color: black;
+
+                /*
+                width: 300px;
+                height: 300px;
+                */
+
+                max-width:300px;
+                max-height:300px;
+                width: auto;
+                height: auto;
+            }
+
+            .lista {
+                text-align: left;
+                list-style-type: none;
+
+                border: 2.5px;
+                border-style: solid; 
+                border-color: black;
+                background: rgb(157, 179, 204);
+            }
+
+            .boxmodel_painel {
+
+                margin: 30px;
+                width: 40%;
+                height: auto;
+                border: 3.5px;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                padding: 5px;                
+                background: rgb(79, 143, 216);
+                color: rgb(7, 7, 7);
+                float: left;
+                margin-left: 30%;             
+            }
+
+            .boxmodel_group {
+
+                margin: 5px;
+
+                padding: 15px;
+
+                /*
+                width: auto;
+                height: auto;                                
+                */              
+            }
+
+            .boxmodel_footer {
+
+                margin: 30px;
+
+                border: 1px;
+                border-style: solid; 
+                border-color: black;
+
+                padding: 10px;
+                width: 86%;
+                height: auto;                                
+
+                text-align: center;
+                clear: both;        
+            }
+        </style>
+    </head> 
+    <body>
+        <div class="cor_fundo_1">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            
+            <li class="nav-item">
+              <a class="nav-link active" id="perfil-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="perfil" aria-selected="false">Perfil Pessoal</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="formacao-tab" data-toggle="tab" href="#formacao" role="tab" aria-controls="formacao" aria-selected="false">Formação Acadêmica</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="experiencia-tab" data-toggle="tab" href="#experiencia" role="tab" aria-controls="experiencia" aria-selected="false">Experiência Profissional</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="conhecimentos-tab" data-toggle="tab" href="#conhecimentos" role="tab" aria-controls="conhecimentos" aria-selected="false">Conhecimentos</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="perfil" role="tabpanel" aria-labelledby="perfil-tab"> <!--PERFIL COMEÇO DA DIV-->
+                <div class="boxmodel_painel">                    
+                    
+                    <div class="boxmodel_group">
+                        <h2 class="titulo_centralizado">Arthur Santos Cardoso</h2>                    
+                    </div>
+
+                    <div class="boxmodel_group">
+                        <div class="center">                    
+                        <img class="imgCenter" src="./imgs/ft_perfil.jpg">
+                        </div>
+                    </div>
+
+                    <div class="boxmodel_group">                  
+                            <ul class="lista"> 
+                                <li><a style="font-weight: bold; text-decoration: underline;">Idade</a>: 18 anos</li>
+                                <li><a style="font-weight: bold; text-decoration: underline;">Endereço</a>: Rua Uruguai 379 apto. 302, Passo Fundo - RS</li>
+                                <li><a style="font-weight: bold; text-decoration: underline;">Telefone & Whatsapp</a>: (54) 98110-5470</li>
+                                <li><a style="font-weight: bold; text-decoration: underline;">Email principal</a>: arthursc24062005@gmail.com</li>
+                                <li><a style="font-weight: bold; text-decoration: underline;">Email secundário</a>: arthursantos.pf002@academico.ifsul.edu.br</li>
+                                <li><a style="font-weight: bold; text-decoration: underline;">Github</a>: <a style="text-decoration: underline;" href="https://github.com/Arthur-S-Cardoso">https://github.com/Arthur-S-Cardoso</a></li>
+                            </ul>
+                    </div>
+
+                </div>
+            </div><!--PERFIL FIM DA DIV-->
+
+            <div class="tab-pane fade" id="formacao" role="tabpanel" aria-labelledby="formacao-tab"> <!--FORMAÇÃO-->
+                <div class="boxmodel_painel">                    
+                    
+                    <div class="boxmodel_group">
+                        <h2 class="titulo_centralizado">Formação Acadêmica</h2>                    
+                    </div>
+
+                    <div class="boxmodel_group">                  
+                            <ol type="I">
+                                <li>
+                                    <span class="span_format">Formado no Ensimo Mèdio Integrado com <a class="text_formatado_2">Curso Técnico em Informática</a> 
+                                        pelo IFSul campus Passo Fundo (de 02/2020 a 12/2023;)</span>
+                                    <!--<p class="text_formatado_1">Formado no Ensimo Mèdio Integrado com <a class="text_formatado_2">Curso Técnico em Informática</a> 
+                                        pelo IFSul campus Passo Fundo (de 02/2020 a 12/2023;)</p>-->
+                                        <hr>
+                                </li>
+                                <li>
+                                    <span class="span_format">Cursando <a class="text_formatado_2">Bacharelado em Ciência da Computação</a> no IFSul campus Passo Fundo (desde 02/2024);</span>
+                                    <!--<p class="text_formatado_1">Cursando <a class="text_formatado_2">Bacharelado em Ciência da Computação</a> no IFSul campus Passo Fundo (desde 02/2024);</p>
+                                    -->
+                                    <hr>
+                                </li>
+                                <li>
+                                    <span class="span_format">Outras formações na área:</span>
+                                    <ul>
+                                        <li>Participação na <a class="text_formatado_2">XIII Semana Acadêmica</a> realizada no IFSul Campus Passo Fundo (10/2023);</li>
+                                        <li>Participação na <a class="text_formatado_2">4° Jornada Empreendedora</a> realizada no IFSul Campus Passo Fundo (10/2023);</li>
+                                        <li>Participação no <a class="text_formatado_2">III Congresso de Tecnologia da Informação do IFSUL - passo Fundo</a> realizada no IFSul Campus Passo Fundo (06/2023);</li>
+                                        <li>Participação na <a class="text_formatado_2">XII Semana Acadêmica - Tecnologia a serviço da sociedade</a> realizada no IFSul Campus Passo Fundo (10/2022).</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                    </div>
+
+                </div>
+            </div><!--FORMAÇÃO FIM DA DIV-->
+
+            <div class="tab-pane fade" id="experiencia" role="tabpanel" aria-labelledby="experiencia-tab">
+                <div class="boxmodel_painel">
+
+                    <div class="boxmodel_group">
+                        <h2 class="titulo_centralizado">Experiência Profissional</h2>                    
+                    </div>
+
+                    <div class="boxmodel_group">
+                        <div class="label_estilo">
+                            <label>
+                                Estágio na Empresa <a class="text_formatado_2">TN3 Soluções</a> como <a class="text_formatado_2">Analista de Suporte Jr.</a> (desde 03/2024).
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--EXPERIÊNCIA PROFISSIONAL FIM DA DIV-->
+
+            <div class="tab-pane fade" id="conhecimentos" role="tabpanel" aria-labelledby="conhecimentos-tab">
+                <div class="boxmodel_painel">
+
+                    <div class="boxmodel_group">
+                        <h2 class="titulo_centralizado">Conhecimentos</h2>
+                    </div>
+
+                    <div class="boxmodel_group">
+                        <ul>
+                            <li>
+                                <p><a class="text_formatado_2">Língua Inglesa:</a> leitura intermediária, conversação básica</p>
+                            </li>
+                            <li>
+                                <p class="text_formatado_2">Área Técnica da Informática:</p>             
+                                    <ul>
+                                        <li><p class="text_formatado_2">Linguagens de Programação:</p></li>
+                                        <ul>
+                                            <li><a class="text_formatado_2">HTML:</a> nível intermediário</li>
+                                            <li><a class="text_formatado_2">CSS:</a> nível básico</li>
+                                            <li><a class="text_formatado_2">JavaScript:</a> nível intermediário</li>
+                                            <li><a class="text_formatado_2">XML:</a> nível intermediário</li>
+                                            <li><a class="text_formatado_2">SQL:</a> nível intermediário</li>
+                                        </ul>
+                                        <br>
+                                        <li><p><a class="text_formatado_2">Banco de Dados SQL (Postgres, SQL Server):</a> nível básico</p></li>
+                                        <li><p><a class="text_formatado_2">Montagem e Manutenção de Computadores:</a> nível avançado</p></li>
+                                        <li><p><a class="text_formatado_2">Redes de Computadores:</a> nível básico</p></li>
+                                        <li><p>Sistema Operacional <a class="text_formatado_2">Windows</a> , instalção, configuração e opreação: nível intermediário</p></li>
+                                        <li><p>Sistema Operacional <a class="text_formatado_2">Linux</a> , instalção, configuração e opreação: nível básico</p></li>
+                                        <li><p><a class="text_formatado_2">Algoritmos:</a> nível intermediário</p></li>
+                                    </ul>
+                                    <br>
+                            </li>
+                            <li>
+                                <p><a class="text_formatado_2">Office </a>(Word, Power Point, Excel): nível básico</p>
+                            </li>
+                            <li>
+                                <p>Conhecimentos em<a class="text_formatado_2"> Educação Financeira:</a> nível básico</p>
+                            </li>
+                            <li>
+                                <p>Conhecimentos na área de<a class="text_formatado_2"> Estudo e Aprendizagem</a></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div><!--CONHECIMENTOS FIM DA DIV-->
+
+          </div>
+        </div><!--cor_fundo_1-->
+    </body>
+</html>
